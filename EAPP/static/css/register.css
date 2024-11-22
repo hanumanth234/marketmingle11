@@ -1,0 +1,130 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #fff;
+  color: #007bff;
+  font-size: 12px; /* Even smaller font size */
+  line-height: 1.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+/* Header */
+header h1 {
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  color: #912d2d;
+  padding: 8px 0; 
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px; 
+  font-size: 2rem; 
+  font-weight: 900; 
+  letter-spacing: -4px; 
+  margin: 0; 
+  text-transform: uppercase; 
+}
+
+/* Navigation */
+nav {
+  margin-top: 8px; /* Reduced space between header and nav */
+}
+
+nav a {
+  text-decoration: none;
+  color: #007bff; /* Blue text */
+  font-weight: 800;
+  margin: 0 8px; /* Reduced space between links */
+  font-size: 0.8rem; /* Even smaller font size */
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0056b3; /* Dark blue on hover */
+}
+
+/* Main Section */
+main {
+  max-width: 400px; /* Reduced width */
+  width: 100%;
+  background: #fff;
+  padding: 30px; /* Smaller padding */
+  box-shadow: 0 9px 16px rgba(0, 0, 0, 0.2); /* Smaller shadow */
+  border-radius: 30px; /* Smaller border radius */
+}
+
+/* Registration Form */
+#registration-form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Reduced gap between form elements */
+}
+
+#registration-form label {
+  font-size: 0.9rem; /* Smaller font size */
+  font-weight: bold;
+  color: #333;
+}
+
+#registration-form input,
+#registration-form select {
+  padding: 8px; /* Smaller padding */
+  font-size: 0.8rem; /* Even smaller font size */
+  border: 2px solid #ddd;
+  border-radius: 10px; /* Smaller border radius */
+  margin-top: 4px; /* Reduced margin */
+}
+
+#registration-form input:focus,
+#registration-form select:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
+
+#registration-form button {
+  background-color: #007bff; /* Blue button */
+  color: #fff;
+  padding: 10px; /* Smaller padding */
+  border: none;
+  border-radius: 10px; /* Smaller border radius */
+  font-size: 0.9rem; /* Smaller font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#registration-form button:hover {
+  background-color: #0056b3; /* Dark blue on hover */
+}
+
+/* Result Message */
+#registration-result {
+  margin-top: 10px; /* Smaller margin */
+  font-size: 0.9rem; /* Smaller font size */
+  font-weight: 600;
+  color: #007bff;
+}
+
+
+footer {
+  position: absolute; /* Fix the footer at the bottom */
+  bottom: 10px; /* Distance from the bottom */
+  width: 100%; /* Full width */
+  text-align: center;
+  font-size: 0.5rem;
+  color: #000000;
+  font-weight: bold;
+}

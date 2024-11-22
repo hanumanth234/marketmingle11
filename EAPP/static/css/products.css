@@ -1,0 +1,145 @@
+/* General Body Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+  
+  /* Header Section */
+  header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 3rem; 
+    letter-spacing: -0.13em;
+    color: #912d2d; 
+    margin-bottom: -10px;
+    font-weight: 625;
+    padding: -1px;
+    margin: 0;
+  }
+  
+  /* Cart Icon Styling */
+  #cart-icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+  }
+  
+  .cart-icon {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  #cart-count {
+    position: absolute;
+    top: -30px;
+    right: -10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-weight: 610;
+    font-size: 14px;
+  }
+  
+  /* Category Name */
+  .category-name {
+    font-size: 2.3rem; 
+    color: #ffffff; 
+    margin-bottom: 0px;
+    font-weight: 625;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Products Container */
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+  
+  /* Product Card */
+  .product-card {
+    background-color: white;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Product Image */
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Product Details */
+  .product-details {
+    margin-top: 10px;
+  }
+  
+  .product-details h3 {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .product-details p {
+    margin: 3px 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Add to Cart Button */
+  .add-to-cart-btn {
+    background-color: #ffffff;
+    color: rgb(148, 15, 15);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 5px;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #ffffff;
+  }
+  
+  /* Add to Cart (Icon) Positioning */
+  .add-to-cart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Animation for Cart Icon Blink */
+  @keyframes blink-animation {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

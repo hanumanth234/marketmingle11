@@ -1,0 +1,73 @@
+/* Basic reset to remove margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set the body background to white */
+  body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  /* Style for header */
+  header {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem; 
+    letter-spacing: -0.12em;
+    color: #912d2d; 
+    margin-bottom: -10px;
+    font-weight: 625; 
+  }
+  
+  /* Main section styles */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Container for buttons */
+  #actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px; 
+  }
+  
+  .action-btn {
+    display: inline-block;
+    padding: 6px -1px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: #007bff;
+    background-color: white; /* Button color */
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .action-btn:hover {
+    background-color: white; /* Darker blue when hovered */
+  }
+  
+  /* Footer style */
+  footer {
+    position: absolute; /* Fix the footer at the bottom */
+    bottom: 10px; /* Distance from the bottom */
+    width: 100%; /* Full width */
+    text-align: center;
+    font-size: 0.5rem;
+    color: #000000;
+    font-weight: bold;
+  }

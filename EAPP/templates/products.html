@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - SNAPSHOP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/products.css') }}">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>SNAPSHOP</h1>
+    <!-- CART ICON -->
+    <div id="cart-icon-container">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count" class="cart-count">0</span>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <div class="category-name">{{ category_name }}</div>
+    <div id="products-container" class="products-container">
+      {% for product in products %}
+      <div class="product-card">
+        <img src="{{ product.image_url }}" alt="{{ product.Product_Name }}">
+        <div class="product-details">
+          <h3>{{ product.Product_Name }}</h3>
+          <p>Price: ₹{{ product.Product_Price }}</p>
+          <p>Rating: {{ product.Product_Rating }}☆</p>
+        </div>
+        <div class="add-to-cart">
+          <button class="add-to-cart-btn" data-product-id="{{ product.Product_Id }}" data-product-name="{{ product.Product_Name }}" data-product-price="{{ product.Product_Price }}">+</button>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/products.js') }}"></script>
+</body>
+</html>
